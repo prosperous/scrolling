@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mount"]];
+    self.myScrollView.contentSize = self.imageView.frame.size;
+    [self.myScrollView addSubview:self.imageView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
