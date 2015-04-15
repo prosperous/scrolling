@@ -16,11 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jU5-Gp-8Pw">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jU5-Gp-8Pw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jU5-Gp-8Pw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Ew-9u-53f"/>
+                            <constraint firstItem="jU5-Gp-8Pw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UMP-4u-lF4"/>
+                            <constraint firstAttribute="trailing" secondItem="jU5-Gp-8Pw" secondAttribute="trailing" id="XHw-eM-HLT"/>
+                            <constraint firstItem="jU5-Gp-8Pw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hll-cM-zBL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myScrollView" destination="jU5-Gp-8Pw" id="12m-2e-GF4"/>
